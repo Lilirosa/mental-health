@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Kameron", serif;
+    background: rgb(20,200,255);
+    display: flex;
+    overflow-x: hidden;
+    padding-bottom: 50px;
+}
+
+.content {
+    height: 120px;
+    width: 1200px;
+    border: 8px double rgb(17, 17, 94);
+    display: flex;
+    position: absolute;
+    top: 150px;
+    left: 75px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.content p {
+    color: midnightblue;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 5px 100px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.walk {
+    height: 300px;
+    width: 300px;
+    border: 5px dashed midnightblue;
+    top: 320px;
+    left: 30px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.walk h3 {
+    font-size: 25px;
+    color: midnightblue;
+    letter-spacing: 0.3px;
+    padding: 30px 50px 20px;
+    text-align: center;
+}
+
+.walk p {
+    font-size: 20px;
+    color: midnightblue;
+    letter-spacing: 0.5px;
+    padding: 0px 20px 5px; 
+    margin: 5px;
+    text-align: center;
+}
+
+.yoga {
+    height: 300px;
+    width: 300px;
+    border: 5px dashed midnightblue;
+    top: 320px;
+    left: 365px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.yoga h3 {
+    font-size: 25px;
+    color: midnightblue;
+    letter-spacing: 0.3px;
+    padding: 30px 50px 15px;
+    text-align: center;
+}
+
+.yoga p {
+    font-size: 19px;
+    color: midnightblue;
+    letter-spacing: 0.5px;
+    padding: 0px 20px 5px; 
+    margin: 5px;
+    text-align: center;
+}
+
+.run {
+    height: 300px;
+    width: 300px;
+   border: 5px dashed midnightblue;
+    top: 320px;
+    left: 700px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.run h3 {
+    font-size: 25px;
+    color: midnightblue;
+    letter-spacing: 0.3px;
+    padding: 30px 50px 10px;
+    text-align: center;
+}
+
+.run p {
+    font-size: 18px;
+    color: midnightblue;
+    letter-spacing: 0.5px;
+    padding: 0px 25px 5px; 
+    margin: 5px;
+    text-align: center;
+}
+
+.other {
+    height: 300px;
+    width: 300px;
+    border: 5px dashed midnightblue;
+    top: 320px;
+    left: 1035px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.other h3 {
+    font-size: 25px;
+    color: midnightblue;
+    letter-spacing: 0.3px;
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.nav {
+    background: rgb(9, 9, 95);
+    position: fixed;
+    height: 80px;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.container {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    font-size: 17px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: powderblue;
+    padding: 7px 15px;
+}
+
+.nav a:hover {
+    color: skyblue;
+    font-weight: bold;
+}
+
+.logo a {
+    font-size: 28px;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    padding: 3px 0px 0px 20px;
+}
+
+.nav a.current {
+    color: white;
+    font-weight: bold;
+}

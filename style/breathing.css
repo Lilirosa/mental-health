@@ -1,0 +1,13 @@
+/* this is where we will style the breathing page */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(135,10,190);
+    display: flex;
+    overflow-x: hidden;
+    padding-bottom: 50px;
+}

@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NZ+Basic:wght@100..400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(230,95,255);
+    display: flex;
+    overflow-x: hidden;
+    padding-bottom: 50px;
+    font-family: "Playwrite NZ Basic", cursive;
+}
+
+.content {
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: 220px;
+    left: 75px;
+    border: 5px dotted indigo;
+}
+
+.content p {
+    font-size: 17px;
+    padding: 15px 15px 5px 30px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.content ul {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    align-items: center;
+    padding: 20px 30px 30px 50px ;
+    color: white;
+}
+
+.journal {
+    background-image: url('../images/journal.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 800px;
+    position: absolute;
+    top: 220px;
+    left: 475px;
+    z-index: 1;
+    opacity: 1;
+}
+
+.input {
+    background: white;
+    border: 0;
+    font-size: 20px;
+    width: 375px;
+    max-width: 380px;
+    height: 400px;
+    max-height: 400px;
+    padding: 10px 20px;
+    resize: none;
+    overflow: auto;
+    position: absolute;
+    z-index: 100;
+    opacity: 1;
+}
+
+.journal2 {
+    height: 400px;
+    width: 380px;
+    position: absolute;
+    top: 220px;
+    right: 80px;
+    z-index: 1;
+    opacity: 1;
+}
+
+.input2 {
+    background: white;
+    border: 0;
+    font-size: 20px;
+    width: 375px;
+    max-width: 380px;
+    height: 400px;
+    max-height: 400px;
+    padding: 10px 20px;
+    resize: none;
+    overflow: auto;
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+}
+
+.journal3 {
+    background-image: url('../images/journal.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 800px;
+    position: absolute;
+    top: 220px;
+    left: 475px;
+    z-index: -1;
+    opacity: 0;
+}
+
+.input3 {
+    background: white;
+    border: 0;
+    font-size: 20px;
+    width: 375px;
+    max-width: 380px;
+    height: 400px;
+    max-height: 400px;
+    padding: 10px 20px;
+    resize: none;
+    overflow: auto;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.journal4 {
+    height: 400px;
+    width: 380px;
+    position: absolute;
+    top: 220px;
+    right: 80px;
+    z-index: -1;
+    opacity: 0;
+}
+
+.input4 {
+    background: white;
+    border: 0;
+    font-size: 20px;
+    width: 375px;
+    max-width: 380px;
+    height: 400px;
+    max-height: 400px;
+    padding: 10px 20px;
+    resize: none;
+    overflow: auto;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.journal5 {
+    background-image: url('../images/journal.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 800px;
+    position: absolute;
+    top: 220px;
+    left: 475px;
+    z-index: -1;
+    opacity: 0;
+}
+
+.input5 {
+    background: white;
+    border: 0;
+    font-size: 20px;
+    width: 375px;
+    max-width: 380px;
+    height: 400px;
+    max-height: 400px;
+    padding: 10px 20px;
+    resize: none;
+    overflow: auto;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.journal6 {
+    height: 400px;
+    width: 380px;
+    position: absolute;
+    top: 220px;
+    right: 80px;
+    z-index: -1;
+    opacity: 0;
+}
+
+.input6 {
+    background: white;
+    border: 0;
+    font-size: 20px;
+    width: 375px;
+    max-width: 380px;
+    height: 400px;
+    max-height: 400px;
+    padding: 10px 20px;
+    resize: none;
+    overflow: auto;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.journal7 {
+    background-image: url('../images/journal.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 800px;
+    position: absolute;
+    top: 220px;
+    left: 475px;
+    z-index: -1;
+    opacity: 0;
+}
+
+.input7 {
+    background: white;
+    border: 0;
+    font-size: 20px;
+    width: 375px;
+    max-width: 380px;
+    height: 400px;
+    max-height: 400px;
+    padding: 10px 20px;
+    resize: none;
+    overflow: auto;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.journal8 {
+    height: 400px;
+    width: 380px;
+    position: absolute;
+    top: 220px;
+    right: 80px;
+    z-index: -1;
+    opacity: 0;
+}
+
+.input8 {
+    background: white;
+    border: 0;
+    font-size: 20px;
+    width: 375px;
+    max-width: 380px;
+    height: 400px;
+    max-height: 400px;
+    padding: 10px 20px;
+    resize: none;
+    overflow: auto;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.journal9 {
+    background-image: url('../images/journal.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 800px;
+    position: absolute;
+    top: 220px;
+    left: 475px;
+    z-index: -1;
+    opacity: 0;
+}
+
+.input9 {
+    background: white;
+    border: 0;
+    font-size: 20px;
+    width: 375px;
+    max-width: 380px;
+    height: 400px;
+    max-height: 400px;
+    padding: 10px 20px;
+    resize: none;
+    overflow: auto;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.journal10 {
+    height: 400px;
+    width: 380px;
+    position: absolute;
+    top: 220px;
+    right: 80px;
+    z-index: -1;
+    opacity: 0;
+}
+
+.input10 {
+    background: white;
+    border: 0;
+    font-size: 20px;
+    width: 375px;
+    max-width: 380px;
+    height: 400px;
+    max-height: 400px;
+    padding: 10px 20px;
+    resize: none;
+    overflow: auto;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.previous_button {
+    height: 70px;
+    width: 100px;
+    background: darkmagenta;
+    position: absolute;
+    top: 140px;
+    left: 620px;
+    border-radius: 10px;
+    border: 3px outset plum;
+    opacity: 0;
+}
+
+.previous_button p {
+    color: white;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+.next_button {
+    height: 70px;
+    width: 100px;
+    background: darkmagenta;
+    position: absolute;
+    top: 140px;
+    left: 1020px;
+    border-radius: 10px;
+    border: 3px outset plum;
+    cursor: pointer;
+}
+
+.next_button p {
+    color: white;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.nav {
+    background: indigo;
+    position: fixed;
+    height: 80px;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.container {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 1px; */
+    font-size: 17px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: plum;
+    padding: 7px 15px;
+}
+
+.nav a:hover {
+    color: darkmagenta;
+    font-weight: bold;
+}
+
+.logo a {
+    font-size: 28px;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    padding: 0px 0px 0px 20px;
+}
+
+.nav a.current {
+    color: white;
+    font-weight: bold;
+}
+

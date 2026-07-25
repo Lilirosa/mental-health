@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    overflow-x: hidden;
+    font-family: "Nunito", sans-serif;
+    padding-bottom: 50px;
+    background: rgb(0,150,0);
+}
+
+.content {
+    display: flex;
+    position: absolute;
+    /* border: 4px dashed #025202; */
+    border: 4px dashed #021b02;
+    top: 150px;
+    left: 174px;
+    height: 100px;
+    width: 1000px;
+    align-items: center;
+    justify-content: center;
+    /* background: #021b02; */
+}
+
+.content p {
+    font-size: 21px;
+    padding: 10px;
+    letter-spacing: 0.5px;
+    color: palegreen;
+}
+
+.next {
+    height: 70px;
+    width: 100px;
+    background: palegreen;
+    display: flex;
+    position: absolute;
+    top: 280px;
+    left: 625px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 3px groove white;
+}
+
+.next p {
+    font-size: 20px;
+}
+
+.step1 {
+    height: 100px;
+    width: 400px;
+    background: #021b02;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 420px;
+    left: 474px;
+    opacity: 0;
+    border-radius: 10px;
+    border: 5px double black;
+}
+
+.step1 p {
+    color: palegreen;
+    font-size: 20px;
+}
+
+.step2 {
+    height: 100px;
+    width: 400px;
+    background: #021b02;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 420px;
+    left: 474px;
+    opacity: 0;
+    border-radius: 10px;
+    border: 5px double black;
+}
+
+.step2 p {
+    color: palegreen;
+    font-size: 20px;
+    text-align: center;
+}
+
+.step3 {
+    height: 100px;
+    width: 400px;
+    background: #021b02;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 420px;
+    left: 474px;
+    opacity: 0;
+    border-radius: 10px;
+    border: 5px double black;
+}
+
+.step3 p {
+    color: palegreen;
+    font-size: 20px;
+}
+
+.step4 {
+    height: 100px;
+    width: 400px;
+    background: #021b02;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 420px;
+    left: 474px;
+    opacity: 0;
+    border-radius: 10px;
+    border: 5px double black;
+}
+
+.step4 p {
+    color: palegreen;
+    font-size: 20px;
+}
+
+.step5 {
+    height: 100px;
+    width: 400px;
+    background: #021b02;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 420px;
+    left: 474px;
+    opacity: 0;
+    border-radius: 10px;
+    border: 5px double black;
+}
+
+.step5 p {
+    color: palegreen;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.nav {
+    background: #003d00;
+    /* background: #044704; */
+    position: fixed;
+    height: 80px;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.container {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    font-size: 17px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(105, 189, 102);
+    padding: 7px 15px;
+}
+
+.nav a:hover {
+    color: palegreen;
+    font-weight: bold;
+}
+
+.logo a {
+    font-size: 28px;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    padding: 3px 0px 0px 20px;
+}
+
+.nav a.current {
+    color: white;
+    font-weight: bold;
+}
