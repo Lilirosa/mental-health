@@ -1,13 +1,239 @@
-/* this is where we will style the breathing page */
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NZ+Basic:wght@100..400&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
     background: rgb(135,10,190);
     display: flex;
     overflow-x: hidden;
     padding-bottom: 50px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.button1 {
+    height: 70px;
+    width: 160px;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 80px;
+    left: 280px;
+    border: 3px inset lavender;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+.button1 p {
+    font-size: 17px;
+    padding: 22px;
+}
+
+.balloon {
+    background: red;
+    height: 95px;
+    width: 75px;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    left: 320px;
+    z-index: 1;
+}
+
+.string {
+    height: 120px;
+    width: 5px;
+    border-radius: 0 0 40% 40%;
+    background: white;
+    position: absolute;
+    top: 285px;
+    left: 355px;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(1);
+        top: 200px;
+    }
+    to {
+        transform: scale(2);
+        top: 150px;
+    }
+}
+
+.balloon.grow {
+    animation: grow 4s linear forwards;
+}
+
+@keyframes shrink {
+    from {
+        transform: scale(2);
+        top: 150px;
+    }
+    to {
+        transform: scale(1);
+        top: 200px;
+    }
+}
+
+.balloon.shrink {
+    animation: shrink 8s linear forwards;
+}
+
+.button2 {
+    height: 70px;
+    width: 160px;
+    background: white;
+    position: absolute;
+    border-radius: 10px;
+    border: 3px inset lavender;
+    bottom: 80px;
+    right: 280px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+.button2 p {
+    font-size: 17px;
+    padding: 22px;
+}
+
+.side1 {
+    background: navy;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    top: 200px;
+    right: 280px;
+    transform: skewX(-3deg);
+    transform-origin: bottom center;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.side2 {
+    background: navy;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    top: 302px;
+    right: 180px;
+    rotate: 90deg;
+    transform: skewX(-5deg);
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.side3 {
+    background: navy;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    top: 399px;
+    right: 278px;
+    transform: skewX(3deg);
+    transform-origin: bottom center;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.side4 {
+    background: navy;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    top: 302px;
+    right: 380px;
+    rotate: 270deg;
+    transform: skewX(5deg);
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    opacity: 0;
+}
+
+
+
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.nav {
+    background: navy;
+    position: fixed;
+    height: 80px;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.container {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5px;
+    font-size: 17px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: tomato;
+    padding: 7px 15px;
+}
+
+.nav a:hover {
+    color: red;
+    font-weight: bold;
+}
+
+.logo a {
+    font-size: 28px;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    padding: 0px 0px 0px 20px;
+}
+
+.nav a.current {
+    color: white;
+    font-weight: bold;
 }
